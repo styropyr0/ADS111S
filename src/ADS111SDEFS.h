@@ -1,0 +1,82 @@
+#ifndef ADS111SDEFS
+#define ADS111SDEFS
+
+#ifdef __cplusplus
+
+// I2C address
+#define ADS111S_I2C_ADDR 0x48
+
+// Register addresses
+#define ADS111S_CONV_REG 0x00
+#define ADS111S_CONFIG_REG 0x01
+#define ADS111S_LO_THRESH_REG 0x02
+#define ADS111S_HI_THRESH_REG 0x03
+
+// Config register masks
+#define ADS111S_OS_MASK 0x80
+#define ADS111S_PGA_MASK 0x0E
+#define ADS111S_MODE_MASK 0x01
+#define ADS111S_DR_MASK 0xE0
+#define ADS111S_COMP_MODE_MASK 0x10
+#define ADS111S_COMP_POL_MASK 0x08
+#define ADS111S_COMP_LAT_MASK 0x04
+#define ADS111S_COMP_QUE_MASK 0x03
+
+// Operational status
+#define ADS111S_OS_START_SINGLE 0x80
+#define ADS111S_OS_KEEP_DOWN 0x00
+#define ADS111S_MUX_MASK 0x70
+#define ADS111S_MUX_DIFF_0_1 0x00
+#define ADS111S_MUX_DIFF_0_3 0x01
+#define ADS111S_MUX_DIFF_1_3 0x02
+#define ADS111S_MUX_DIFF_2_3 0x03
+#define ADS111S_MUX_SINGLE_0 0x04
+#define ADS111S_MUX_SINGLE_1 0x05
+#define ADS111S_MUX_SINGLE_2 0x06
+#define ADS111S_MUX_SINGLE_3 0x07
+
+// Programmable gain amplifier
+#define ADS111S_PGA_6_144V 0x00
+#define ADS111S_PGA_4_096V 0x01
+#define ADS111S_PGA_2_048V 0x02
+#define ADS111S_PGA_1_024V 0x03
+#define ADS111S_PGA_0_512V 0x04
+#define ADS111S_PGA_0_256V 0x05
+
+// Device operating mode
+#define ADS111S_MODE_CONTINUOUS 0x00
+#define ADS111S_MODE_SINGLE 0x01
+
+// Data rate
+#define ADS111S_DR_8SPS 0x00
+#define ADS111S_DR_16SPS 0x01
+#define ADS111S_DR_32SPS 0x01
+#define ADS111S_DR_64SPS 0x03
+#define ADS111S_DR_128SPS 0x04
+#define ADS111S_DR_250SPS 0x05
+#define ADS111S_DR_475SPS 0x06
+#define ADS111S_DR_860SPS 0x07
+
+// Comparator mode
+#define ADS111S_COMP_MODE_TRADITIONAL 0x00
+#define ADS111S_COMP_MODE_WINDOW 0x01
+
+// Comparator polarity
+#define ADS111S_COMP_POL_ACTIVE_LOW 0x00
+#define ADS111S_COMP_POL_ACTIVE_HIGH 0x01
+
+// Comparator latching
+#define ADS111S_COMP_LAT_NON_LATCHING 0x00
+#define ADS111S_COMP_LAT_LATCHING 0x01
+
+// Comparator queue
+#define ADS111S_COMP_QUE_1_CONV 0x00
+#define ADS111S_COMP_QUE_2_CONV 0x01
+#define ADS111S_COMP_QUE_4_CONV 0x02
+#define ADS111S_COMP_QUE_DISABLE 0x03
+
+// ADC resolution
+#define ADS111S_ADC_MAX 0x8000
+
+#endif // __cplusplus
+#endif // ADS111SDEFS
