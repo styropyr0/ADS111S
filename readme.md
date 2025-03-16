@@ -2,6 +2,8 @@
 
 The **ADS111S** library provides an easy-to-use interface for interacting with the ADS111x series 16-bit Analog-to-Digital Converters (ADCs) over I2C. This library supports single-ended and differential analog input readings, configurable gain, data rate, operating mode, and comparator settings. It is designed to work seamlessly with the Arduino platform.
 
+Supported ADC modules: ADS1115, ADS1114, ADS1113
+
 ## Features
 - Read single-ended or differential analog inputs.
 - Configure programmable gain amplifier (PGA) settings (e.g., 6.144V, 4.096V, etc.).
