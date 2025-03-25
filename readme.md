@@ -138,7 +138,7 @@ Constants for configuration are defined in `ADS111SDEFS.h`. Examples include:
 - I2C address: `ADS111S_I2C_ADDR` (default: `0x48`).
 
 ## Hardware Requirements
-- Compatible with ADS111x series ADCs (e.g., ADS1113, ADS1114, ADS1115).
+- Compatible with ADS111x series ADCs (supported ADCs are ADS1113, ADS1114, ADS1115).
 - I2C interface (connect SDA and SCL to your Arduino’s I2C pins).
 - Power supply: 2.0V to 5.5V (check your specific ADS111x model).
 
