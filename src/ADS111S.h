@@ -2,7 +2,8 @@
 #define ADS111S_H
 
 #include <Arduino.h>
-#include "SensorHub.h"
+#include <SensorHub.h>
+#include <SensorHubTemplates.h>
 #include "ADS111SDEFS.h"
 
 #ifdef __cplusplus
