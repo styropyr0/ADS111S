@@ -1,4 +1,5 @@
 #include "ADS111S.h"
+#include <SensorHubTemplates.h>
 
 ADS111S::ADS111S() : sensorHub(ADS111S_I2C_ADDR) {}
 
