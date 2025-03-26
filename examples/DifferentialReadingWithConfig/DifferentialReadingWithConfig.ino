@@ -26,8 +26,8 @@
    .COMP_QUE = ADS111S_COMP_QUE_2_CONV         // Assert after 2 conversions
  };
  
- // Create an ADS111S object with the custom configuration
- ADS111S adc(config);
+ // Create an ADS111S object
+ ADS111S adc;
  
  void setup() {
    // Start serial communication

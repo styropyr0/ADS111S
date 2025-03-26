@@ -75,12 +75,12 @@ ADS111SCONFIG config = {
   .COMP_QUE = ADS111S_COMP_QUE_DISABLE        // Disable comparator queue
 };
 
-ADS111S adc(config); // Create an ADS111S object with custom configuration
+ADS111S adc; // Create an ADS111S object
 
 void setup() {
   Serial.begin(115200);
   
-  if (!adc.begin()) {
+  if (!adc.begin(config)) {
     Serial.println("Failed to detect ADS111S ADC!");
     while (1);
   }
